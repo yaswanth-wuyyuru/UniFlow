@@ -125,4 +125,4 @@ if __name__ == "__main__":
         final_df = pd.concat(all_data, ignore_index=True)
         load_analytics_to_snowflake(final_df, secrets)
     else:
-        print("🚫 No data fetched for any symbol.")
+        print(" No data fetched for any symbol.")
