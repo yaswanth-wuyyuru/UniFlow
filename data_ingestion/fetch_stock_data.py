@@ -12,8 +12,8 @@ SYMBOLS = ["tsla", "aapl", "msft", "nvda", "amd", "tsm"]
 def get_env_secrets():
     return {
         "rapidapi_key": os.environ.get("rapidapi_key"),
-        "snowflake_user": os.environ.get("snowflake_username"),
-        "snowflake_password": os.environ.get("snowflake_password"),
+        "snowflake_nonsso_username": os.environ.get("snowflake_nonsso_username"),
+        "snowflake_nonsso_password": os.environ.get("snowflake_nonsso_password"),
         "snowflake_account": os.environ.get("snowflake_account"),
         "snowflake_warehouse": os.environ.get("snowflake_warehouse"),
         "snowflake_database": os.environ.get("snowflake_database"),
@@ -53,8 +53,8 @@ def fetch_stock_analytics(symbol, api_key):
 # 🔐 Connect to Snowflake (using passed-in secrets)
 def connect_snowflake(secrets):
     return snowflake.connector.connect(
-        user=secrets["snowflake_username"],
-        password=secrets["snowflake_password"],
+        user=secrets["snowflake_nonsso_username"],
+        password=secrets["snowflake_nonsso_password"],
         account=secrets["snowflake_account"],
         warehouse=secrets["snowflake_warehouse"],
         database=secrets["snowflake_database"],
