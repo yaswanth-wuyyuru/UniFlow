@@ -69,9 +69,11 @@ def load_analytics_to_snowflake(df, secrets):
 
     conn = connect_snowflake(secrets)
     cursor = conn.cursor()
+    cursor.execute(f"USE SCHEMA {secrets['snowflake_schema']};")
+
 
     create_stmt = """
-    CREATE TABLE IF NOT EXISTS STOCK_ANALYTICS (
+    CREATE TABLE IF NOT EXISTS RAW.STOCK_ANALYTICS (
         symbol STRING,
         price FLOAT,
         target_high FLOAT,
