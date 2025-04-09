@@ -33,4 +33,4 @@ jobs:
           snowflake_database: ${{ secrets.SNOWFLAKE_DATABASE }}
           snowflake_schema: ${{ secrets.SNOWFLAKE_SCHEMA }}
         run: |
-          python data_ingestion/fetch_stock_analytics.py
+          python data_ingestion/fetch_stock_data.py
