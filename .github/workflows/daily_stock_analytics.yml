@@ -2,7 +2,7 @@ name: Daily Stock Analytics Ingestion
 
 on:
   schedule:
-    - cron: '00 23 * * *'  # ⏰ Every day at 6PM CDT
+    - cron: '10 23 * * *'  # ⏰ Every day at 6PM CDT
   workflow_dispatch:     # ➕ Manual run support
 
 jobs:
