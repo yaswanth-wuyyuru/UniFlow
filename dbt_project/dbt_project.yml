@@ -1,0 +1,22 @@
+name: 'uniflow'           # ✅ Must match your profile in profiles.yml
+version: '1.0'
+profile: 'uniflow'        # ✅ Must match the key in profiles.yml
+
+config-version: 2
+
+model-paths: ["models"]    # Folder for your dbt models
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+#data-paths: ["data"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets: ["target", "dbt_modules"]
+
+models:
+  uniflow:
+    staging:
+    +materialized: view
+    sources:
+    +enabled: true

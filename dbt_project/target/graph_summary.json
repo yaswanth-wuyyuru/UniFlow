@@ -1,0 +1,1 @@
+{"_invocation_id": "07b56aaa-dd59-4d5b-80d4-d98ddbd2ec79", "linked": {"0": {"name": "source.uniflow.raw.stock_data", "type": "source", "succ": [1]}, "1": {"name": "model.uniflow.stg_stock_data", "type": "model"}}}

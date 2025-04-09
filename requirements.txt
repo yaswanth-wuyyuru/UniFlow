@@ -1,0 +1,8 @@
+dbt-core
+dbt-snowflake
+snowflake-connector-python
+pandas
+yfinance
+boto3
+pyspark
+great_expectations

@@ -1,0 +1,14 @@
+uniflow:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "{{ env_var('snowflake_account') }}"
+      user: "{{ env_var('snowflake_nonsso_username') }}"
+      password: "{{ env_var('snowflake_nonsso_password') }}"
+      role: ACCOUNTADMIN
+      database: UNIFLOW
+      warehouse: UniFlow
+      schema: RAW
+      threads: 4
+      client_session_keep_alive: false

@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: raw
+    database: UNIFLOW
+    schema: RAW
+    tables:
+      - name: stock_data
