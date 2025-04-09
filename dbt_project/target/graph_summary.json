@@ -1,1 +1,1 @@
-{"_invocation_id": "07b56aaa-dd59-4d5b-80d4-d98ddbd2ec79", "linked": {"0": {"name": "source.uniflow.raw.stock_data", "type": "source", "succ": [1]}, "1": {"name": "model.uniflow.stg_stock_data", "type": "model"}}}
+{"_invocation_id": "e7566f15-0066-44ed-8aa7-af1087f469b2", "linked": {"0": {"name": "source.uniflow.raw.stock_data", "type": "source", "succ": [1]}, "1": {"name": "model.uniflow.stg_stock_data", "type": "model"}}}
