@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_stock_analytics
+    description: "Staging model for stock analytics fetched from RapidAPI"
+    columns:
+      - name: symbol
+        description: "Stock ticker symbol"
+      - name: price
+        description: "Current stock price"
+      - name: target_high
+      - name: target_low
+      - name: target_mean
+      - name: recommendation
+      - name: analyst_count
+      - name: fetched_at

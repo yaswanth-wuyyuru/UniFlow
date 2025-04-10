@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: RAW       # Your Snowflake schema
+    database: UNIFLOW  # Optional: your Snowflake database
+    tables:
+      - name: STOCK_ANALYTICS
+        description: "Raw stock analytics data fetched from RapidAPI and loaded via Python."
