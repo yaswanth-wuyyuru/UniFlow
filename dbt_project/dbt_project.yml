@@ -18,5 +18,3 @@ models:
   uniflow:
     staging:
     +materialized: view
-    sources:
-    +enabled: true
