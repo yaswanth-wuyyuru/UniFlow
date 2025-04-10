@@ -17,4 +17,4 @@ clean-targets: ["target", "dbt_modules"]
 models:
   uniflow:
     staging:
-    +materialized: view
+      +materialized: view
